@@ -36,7 +36,7 @@ const NewTodoTextInput: React.FC = () => {
           className="new-todo"
           placeholder="What needs to be done?"
           ref={textInput}
-          onKeyPress={(e: React.KeyboardEvent<HTMLInputElement>) => addTodo(e)}
+          onKeyPress={(event: React.KeyboardEvent<HTMLInputElement>) => addTodo(event)}
           autoFocus
           data-testid="new-todo-input-text"
           data-cy="new-todo-input-text"
