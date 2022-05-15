@@ -24,7 +24,7 @@ const initialRecoilState: AppState = {
   ],
 }
 
-test('should be render 3 todo items in initialAppState', () => {
+test('Should be render 3 todo items in initialAppState', () => {
   const screen = renderWithRecoilRoot(<TodoList path="/" />, initialRecoilState)
 
   expect(screen.getByTestId('todo-list')).toBeInTheDocument()
