@@ -3,7 +3,6 @@ import { useRecoilValue } from 'recoil'
 import NewTodoInput from './NewTodoInput'
 import TodoList from './TodoList'
 import UnderBar from './UnderBar'
-import Copyright from './Copyright'
 import { RouteComponentProps } from '@reach/router'
 import { Layout } from './style'
 import {
@@ -39,7 +38,6 @@ const App: React.FC<Props & RouteComponentProps> = ({ path }) => {
           </>
         ) : null}
       </section>
-      <Copyright />
     </Layout>
   )
 }
